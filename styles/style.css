@@ -71,6 +71,8 @@
     bottom: 0;
     right: 0;
     z-index: 1;
+    width: 765px;
+    height: 608px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -241,6 +243,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 867px;
+    height: 637px;
 }
 
 /* Kaufman */
@@ -364,4 +368,6 @@
 
 .footer__social-icon {
     margin-right: 10px;
+    width: 16px;
+    height: 16px;
 }
