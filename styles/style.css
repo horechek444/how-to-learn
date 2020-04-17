@@ -9,6 +9,8 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header */
+
 .header {
     display: flex;
     position: relative;
@@ -39,7 +41,7 @@
 .header__title {
     margin: auto 0;
     padding: 0;
-    z-index: 2; /* Считаю текст приоритетнее перед картинкой, добавляю z-index как flex-элементу */
+    z-index: 2;
     width: 730px;
     font-size: 102px;
     font-weight: bold;
@@ -80,6 +82,8 @@
     width: 568px;
     background-color: #2f80ed;
 }
+
+/* Description */
 
 .description {
     display: flex;
@@ -126,6 +130,8 @@
 .two-columns__span-accent {
     font-weight: bold;
 }
+
+/* Digits */
 
 .digits {
     display: flex;
@@ -187,6 +193,8 @@
     margin-bottom: 20px;
 }
 
+/* Feynman */
+
 .feynman {
     display: flex;
     flex-direction: column;
@@ -235,11 +243,13 @@
     left: 0;
 }
 
+/* Kaufman */
+
 .kaufman {
     position: relative;
     padding-top: 90px;
     padding-bottom: 90px;
-    background-color: #000000;
+    background-color: #1f1f1f;
     overflow: hidden;
 }
 
@@ -274,17 +284,20 @@
     background-position: center;
 }
 
+/* Footer */
+
 .footer {
     display: flex;
     padding-top: 60px;
     padding-bottom: 40px;
-    background-color: #000000;
+    background-color: #1f1f1f;
     color: #ffffff;
     min-height: 250px;
 }
 
 .footer__columns {
     display: flex;
+    justify-content: space-between;
     position: relative;
     margin: 0 auto;
     width: 90%;
@@ -323,16 +336,12 @@
 
 .footer__column_content-info {
     display: flex;
-    flex-basis: 355px;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 .footer__column_content-social {
     display: flex;
-    flex-basis: 355px;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 .footer__column-heading {
@@ -348,4 +357,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social-icon {
+    margin-right: 10px;
 }
