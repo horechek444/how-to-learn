@@ -176,7 +176,7 @@
 }
 
 .table__heading {
-    margin: 0 0 20px 0;
+    margin: 0;
     padding: 0;
     font-size: 24px;
     line-height: 1.15;
@@ -185,15 +185,16 @@
 
 .table__text {
     margin: 0;
+    margin-top: 20px;
     padding: 0;
     font-size: 18px;
     line-height: 1.2;
     font-weight: normal;
 }
 
-.table__text:not(:last-of-type) {
+/* .table__text:not(:last-of-type) {
     margin-bottom: 20px;
-}
+} */
 
 /* Feynman */
 
