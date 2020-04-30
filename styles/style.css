@@ -1,3 +1,17 @@
+@keyframes rotation {
+    from {
+        transform: rotate(initial);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Микс для анимации */
+.animation {
+    animation: rotation 20s linear infinite;
+}
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -19,6 +33,7 @@
     max-height: 756px;
     background-color: #f2f2f2;
     padding-left: 64px;
+    overflow: hidden;
     /* выше установили ограничения для секции */
 }
 
@@ -83,6 +98,7 @@
     height: 568px;
     width: 568px;
     background-color: #2f80ed;
+    transform: rotate(-15deg);
 }
 
 /* Description */
@@ -131,6 +147,52 @@
 
 .two-columns__span-accent {
     font-weight: bold;
+}
+
+/* Techniques */
+
+.techniques {
+    padding-top: 100px;
+    margin: auto;
+    width: 80%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.cards__item {
+    width: 290px;
+    padding-top: 60px;
+    min-height: 400px;
+}
+
+.cards__image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 40px 43px;
+}
+
+.cards__title {
+    margin-bottom: 16px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards__description {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+    text-align: center;
 }
 
 /* Digits */
@@ -361,7 +423,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 16px;
 }
 
 .footer__social-icon {
