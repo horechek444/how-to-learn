@@ -1,0 +1,11 @@
+.video__iframes {
+    position: relative;
+    left: 0;
+    bottom: -50px;
+    z-index: 1;
+    display: grid;
+    width: 1050px;
+    grid-template-columns: repeat(auto-fill, 515px);
+    grid-gap: 0 20px;
+    margin: 0 auto;
+}
