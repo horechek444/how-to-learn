@@ -8,8 +8,27 @@
 }
 
 /* Микс для анимации */
+
 .animation {
     animation: rotation 20s linear infinite;
+}
+
+/* Микс для ссылок */
+
+.link-transform {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+
+.link-transform:hover {
+    opacity: 0.6;
+}
+
+/* Микс для того чтобы треугольник не наезжал на заголовок */
+
+.visibility {
+    position: relative;
+    z-index: 1;
 }
 
 .page {
@@ -113,7 +132,6 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
-    min-height: 332px; /*?*/
 }
 
 .two-columns__brief {
@@ -152,22 +170,28 @@
 /* Techniques */
 
 .techniques {
+    display: flex;
+    flex-direction: column;
     padding-top: 100px;
     margin: auto;
     width: 80%;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    grid-gap: 0 100px;
     list-style: none;
+    margin: 0 auto;
     padding: 0;
+    width: 920px;
 }
 
 .cards__item {
-    width: 290px;
     padding-top: 60px;
     min-height: 400px;
+    width: 240px;
+    min-height: 340px;
 }
 
 .cards__image {
@@ -178,7 +202,7 @@
 }
 
 .cards__title {
-    margin-bottom: 16px;
+    margin: 0 0 16px;
     padding: 0;
     font-size: 24px;
     line-height: 1.15;
@@ -193,6 +217,86 @@
     line-height: 23px;
     font-weight: normal;
     text-align: center;
+}
+
+/* Video */
+
+.video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.video__iframes {
+    position: relative;
+    left: 0;
+    bottom: -50px;
+    z-index: 1;
+    display: grid;
+    width: 1050px;
+    grid-template-columns: repeat(auto-fill, 515px);
+    grid-gap: 0 20px;
+    margin: 0 auto;
+}
+
+/* Oakley */
+
+.oakley {
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
+/* Feynman */
+
+.feynman {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 80px;
+    background-color: #f2f2f2;
+    height: 790px;
+}
+
+.feynman__title {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 0;
+    text-align: center;
+    width: 648px;
+    font-size: 120px;
+    line-height: 1.15;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.feynman__subtitle {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.feynman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.feynman__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 867px;
+    height: 637px;
 }
 
 /* Digits */
@@ -246,64 +350,92 @@
 }
 
 .table__text {
-    margin: 0;
-    margin-top: 20px;
+    margin: 20px 0 0;
     padding: 0;
     font-size: 18px;
     line-height: 1.2;
     font-weight: normal;
 }
 
-/* Feynman */
+/* Khan */
 
-.feynman {
+.khan {
+    padding-top: 105px;
+    background-color: #f2f2f2;
+}
+
+.khan__container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding-top: 100px;
-    background-color: #f2f2f2;
-    height: 790px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.feynman__title {
-    margin: 0 auto;
-    margin-bottom: 70px;
+.khan__autor {
+    margin: 0;
     padding: 0;
-    text-align: center;
-    width: 648px;
-    font-size: 120px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+}
+
+.khan__title {
+    margin: 0 0 50px;
+    padding: 0;
+    font-size: 60px;
     line-height: 1.15;
     font-weight: bold;
-    z-index: 1;
 }
 
-.feynman__subtitle {
-    margin: 0 auto;
+.khan__quote {
+    margin: 0 0 36px;
     padding: 0;
-    text-align: center;
-    font-size: 36px;
-    line-height: 51px;
-    font-weight: normal;
-    z-index: 1;
 }
 
-.feynman__link {
-    position: absolute;
-    top: 50%;
-    right: 48px;
-    font-size: 36px;
-    line-height: 51px;
+.khan__quote-text {
+    margin: 0;
+    padding: 0;
+    width: 790px;
+    font-size: 24px;
+    line-height: 34px;
     font-weight: normal;
-    color: #000000;
+}
+
+.khan__quote-author {
+    margin: 0 0 10px;
+    padding: 0;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.khan__quote-author-subline {
+    margin: 0 0 68px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: normal;
+}
+
+.khan__book-container {
+    display: flex;
+}
+
+.khan__book-pic {
+    width: 608px;
+    height: 620px;
+    object-fit: cover;
+    object-position: 0 0;
+    margin-right: 48px;
+}
+
+.khan__buy-link {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #2f80ed;
     text-decoration: none;
-}
-
-.feynman__background {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 867px;
-    height: 637px;
 }
 
 /* Kaufman */
@@ -345,6 +477,49 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Resources */
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 217px;
+    margin: 0 auto;
+    width: 100%;
+    /* min-height: 558px; */
+}
+
+.resources__logo-zone {
+    margin: 80px auto 0;
+    display: flex;
+    width: 1100px;
+}
+
+.resources__logo {
+    display: block;
+    width: 270px;
+    height: 38px;
+}
+
+.resources__logo:nth-of-type(1) {
+    background: url(../images/logo/resources-arzamas.svg) center no-repeat;
+    background-size: contain;
+}
+
+.resources__logo:nth-of-type(2) {
+    background: url(../images/logo/resources-n1.svg) center no-repeat;
+    background-size: contain;
+}
+
+.resources__logo:nth-of-type(3) {
+    background: url(../images/logo/resources-strelka.svg) center no-repeat;
+    background-size: contain;
+}
+
+.resources__logo:nth-of-type(4) {
+    background: url(../images/logo/resources-polka.svg) center no-repeat;
+    background-size: contain;
 }
 
 /* Footer */
