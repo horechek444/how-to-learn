@@ -1,0 +1,5 @@
+/* Микс для того чтобы скорректировать line-height */
+
+.line-height-multiplier {
+    line-height: 1.15;
+}

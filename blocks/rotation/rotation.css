@@ -1,0 +1,14 @@
+@keyframes rotation {
+    from {
+        transform: initial;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Микс для анимации */
+
+.rotation {
+    animation: rotation 20s linear infinite;
+}
