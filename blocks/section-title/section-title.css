@@ -1,5 +1,4 @@
 @import url(./_theme/section-title_theme_dark.css);
-@import url(./__visibility/section-title__visibility.css);
 
 .section-title {
     margin: 0 auto 20px auto;
@@ -7,6 +6,7 @@
     text-align: center;
     width: 60%;
     font-size: 60px;
-    line-height: 69px;
+    line-height: 1.15;
     font-weight: bold;
+    z-index: 1;
 }

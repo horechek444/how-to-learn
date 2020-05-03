@@ -1,6 +1,8 @@
 @import url(./__triangle/kaufman__triangle.css);
 
 .kaufman {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-top: 90px;
     padding-bottom: 90px;

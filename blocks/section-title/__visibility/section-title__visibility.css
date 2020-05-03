@@ -1,6 +1,0 @@
-/* Микс для того чтобы треугольник не наезжал на заголовок */
-
-.section-title__visibility {
-    position: relative;
-    z-index: 1;
-}

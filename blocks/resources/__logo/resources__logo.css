@@ -3,23 +3,3 @@
     width: 270px;
     height: 38px;
 }
-
-.resources__logo:nth-of-type(1) {
-    background: url(../../../images/resources-arzamas.svg) center no-repeat;
-    background-size: contain;
-}
-
-.resources__logo:nth-of-type(2) {
-    background: url(../../../images/resources-n1.svg) center no-repeat;
-    background-size: contain;
-}
-
-.resources__logo:nth-of-type(3) {
-    background: url(../../../images/resources-strelka.svg) center no-repeat;
-    background-size: contain;
-}
-
-.resources__logo:nth-of-type(4) {
-    background: url(../../../images/resources-polka.svg) center no-repeat;
-    background-size: contain;
-}
